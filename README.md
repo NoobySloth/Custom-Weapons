@@ -328,7 +328,7 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_mossberg")] = 0.7,
 	[GetHashKey("weapon_remington")] = 0.7,
 	[GetHashKey("weapon_scarh")] = 0.5,
-```     
+```
 ## Replace the next code in ``config.lua`` in qb-jewelery
 
 ```lua
@@ -447,7 +447,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_PI_FLSH", label = "Flashlight"},
                 }
@@ -461,7 +460,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
                 }
@@ -475,7 +473,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
                     {component = "COMPONENT_AT_SCOPE_MEDIUM", label = "Scope"},
@@ -491,7 +488,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_SG_FLSH", label = "Flashlight"},
                 }
@@ -505,7 +501,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_AR_FLSH", label = "Flashlight"},
                 }
@@ -519,7 +514,6 @@ Config.Items = {
             price = 12,
             amount = 1,
             info = {
-                serie = "PD-" .. tostring(Config.RandomInt(2) .. Config.RandomStr(3) .. Config.RandomInt(1) .. Config.RandomStr(2) .. Config.RandomInt(3)),
                 attachments = {
                     {component = "COMPONENT_AT_SCOPE_LARGE", label = "Scope"},
                 }
@@ -531,4 +525,4 @@ Config.Items = {
     }
 }
 ```
- 
+
