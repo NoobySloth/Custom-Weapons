@@ -7,6 +7,7 @@ This is a **FREE** release!
 - Xandrice
 - LeSiiN
 - NoobySloth
+- Castar
 
 ## Features
 
