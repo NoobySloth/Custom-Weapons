@@ -416,14 +416,14 @@ Config.WhitelistedWeapons = {
 ## Replace the next code in ``config.lua`` in qb-ambulancejob
 
 ```lua
-    [`WEAPON_DE`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_M4`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_AR15`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_AK47`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_M70`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_SCARH`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_UZI`] = Config.WeaponClasses['SMALL_CALIBER'],
-    [`WEAPON_MAC10`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_DE`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_M4`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_AR15`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_AK47`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_M70`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_SCARH`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    [`WEAPON_MAC10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M1911`] = Config.WeaponClasses['SMALL_CALIBER'],
