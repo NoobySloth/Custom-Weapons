@@ -1,19 +1,30 @@
-# Add On Guns for FiveM QB-Core
+# Addon guns for QBCore
 
-This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
+This is a **FREE** release!
 
-LOVE TO NOOBYSLOTH <3
+## Credits
+- Original Model Makers (gta5mods)
+- Xandrice
+- LeSiiN
+- NoobySloth
 
 ## Features
 
 - 17 Add-On Weapons
-- Code for qb-core/qb-weapons/qb-smallresources/qb-policejob/qb-jewelery/qb-ambulancejob for easy installation
 - Images for every gun
 
-## Installation
-- Put the ``[custom_weapons]`` into your ``resource`` folder.
-- Drop first code in ``items.lua`` in qb-core
+**Supplied Snippets**
+- qb-core
+- qb-weapons
+- qb-smallresources
+- qb-policejob
+- qb-jewelery
+- qb-ambulancejob
 
+## Installation
+- Put the ``custom_weapons`` into your ``resource`` folder.
+
+## Drop first code in ``items.lua`` in qb-core
 ```lua
 
 		-- Custom Weapons
@@ -62,23 +73,23 @@ LOVE TO NOOBYSLOTH <3
 
 ```lua
     --Custom Weapons
-    ['weapon_ak47'] 			    = 0.15,
-	['weapon_de'] 	                = 0.15,
-	['weapon_fnx45'] 			    = 0.15,
+    ['weapon_ak47'] 			= 0.15,
+    ['weapon_de'] 	                = 0.15,
+    ['weapon_fnx45'] 			= 0.15,
     ['weapon_glock17'] 		        = 0.15,
-    ['weapon_m4'] 			        = 0.15,
-    ['weapon_mk14'] 			        = 0.15,
-    ['weapon_huntingrifle'] 			        = 0.20,
-    ['weapon_ar15'] 			        = 0.15,
-	['weapon_m9'] 	                = 0.15,
-	['weapon_m70'] 			        = 0.15,
+    ['weapon_m4'] 			= 0.15,
+    ['weapon_mk14'] 			= 0.15,
+    ['weapon_huntingrifle'] 		= 0.20,
+    ['weapon_ar15'] 			= 0.15,
+    ['weapon_m9'] 	                = 0.15,
+    ['weapon_m70'] 			= 0.15,
     ['weapon_m1911'] 		        = 0.15,
-    ['weapon_mac10'] 			    = 0.15,
-	['weapon_uzi'] 	                = 0.15,
-	['weapon_mossberg'] 			= 0.15,
-    ['weapon_remington'] 		    = 0.15,
-    ['weapon_scarh'] 			    = 0.15,
-	['weapon_shiv'] 	            = 0.15,
+    ['weapon_mac10'] 			= 0.15,
+    ['weapon_uzi'] 	                = 0.15,
+    ['weapon_mossberg'] 		= 0.15,
+    ['weapon_remington'] 		= 0.15,
+    ['weapon_scarh'] 			= 0.15,
+    ['weapon_shiv'] 	            	= 0.15,
 ```
 ## Drop the next code in ``config.lua`` in qb-weapons (about line 209)
 
@@ -300,7 +311,7 @@ local holsterableWeapons = {
 ## Drop the next code in ``recoil.lua`` in qb-smallresources ( LINE 107 )
 
 ```lua
-		-- CUSTOM WEAPONS
+	-- CUSTOM WEAPONS
 	[GetHashKey("weapon_ak47")] = 0.5,
 	[GetHashKey("weapon_de")] = 0.5,
 	[GetHashKey("weapon_fnx45")] = 0.3,
@@ -693,9 +704,4 @@ Config.Items = {
     }
 }
 ```
-
-## This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
-## This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
-## This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
-## This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
  
