@@ -2,6 +2,8 @@
 
 This is a FREE release.. thats not my models.. credits goes to the Model maker.. and credits to Xandrice for helping me out a little
 
+LOVE TO NOOBYSLOTH <3
+
 ## Features
 
 - 17 Add-On Weapons
