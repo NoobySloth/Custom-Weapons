@@ -436,6 +436,133 @@ Config.WhitelistedWeapons = {
     [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
 ```
 
+## Add the next code to your `devyn-backitems` script
+
+```lua
+    ["weapon_ak47"] = {
+        model="w_ar_ak47",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0, 
+        z_rotation = 180.0,
+    },
+    ["weapon_m70"] = {
+        model="w_ar_m70",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0, 
+        z_rotation = 180.0,
+    },
+    ["weapon_remington"] = {
+        model="w_sg_remington",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0, 
+        z_rotation = 180.0,
+    },
+    ["weapon_huntingrifle"] = {
+        model="w_sr_huntingrifle",
+        back_bone = 24818,
+        x = 0.0,
+        y = -0.17,
+        z = -0.12,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
+    ["weapon_uzi"] = {
+        model="w_sb_uzi",
+        back_bone = 24818,
+        x =  0.12,
+        y = -0.17,
+        z = -0.0,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 0.0,
+    },
+    ["weapon_mk14"] = {
+        model="w_sr_mk14",
+        back_bone = 24818,
+        x = 0.0,
+        y = -0.17,
+        z = -0.12,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
+    ["weapon_mossberg"] = {
+        model="w_sg_mossberg",
+        back_bone = 24818,
+        x =  0.12,
+        y = -0.17,
+        z = -0.0,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 0.0,
+    },
+    ["weapon_m4"] = {
+        model="w_ar_m4",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0, 
+        z_rotation = 180.0,
+    },
+    ["weapon_scarh"] = {
+        model="w_ar_scarh",
+        back_bone = 24818,
+        x =  0.12,
+        y = -0.17,
+        z = -0.0,
+        x_rotation = 0.0,
+        y_rotation = 180.0,
+        z_rotation = 0.0,
+    },
+    ["weapon_mac10"] = {
+        model="w_sb_mac10",
+        back_bone = 24818,
+        x = 0.0,
+        y = -0.17,
+        z = -0.12,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    }, 
+```
+
+## Add this next line of code to your weaponsTable in `ps-dispatch/client/cl_events.lua`
+
+```lua
+-- Custom weapons
+    [GetHashKey("weapon_ak47")] = "CLASS 3: AK-47",
+    [GetHashKey("weapon_de")] = "CLASS 2: Desert Eagle",
+    [GetHashKey("weapon_fnx45")] = "CLASS 1: FN .45",
+    [GetHashKey("weapon_glock17")] = "CLASS 1: Glock 17",
+    [GetHashKey("weapon_m4")] = "CLASS 3: M4",
+    [GetHashKey("weapon_mk14")] = "CLASS 4: MK 14",
+    [GetHashKey("weapon_huntingrifle")] = "CLASS 3: Hunting Rifle",
+    [GetHashKey("weapon_ar15")] = "CLASS 3: AR-15",
+    [GetHashKey("weapon_m9")] = "CLASS 1: M9",
+    [GetHashKey("weapon_m70")] = "CLASS 3: m70",
+    [GetHashKey("weapon_m1911")] = "CLASS 1: 1911",
+    [GetHashKey("weapon_mac10")] = "CLASS 2: Mac-10",
+    [GetHashKey("weapon_uzi")] = "CLASS 2: Uzi",
+    [GetHashKey("weapon_mossberg")] = "CLASS 2: Mossberg",
+    [GetHashKey("weapon_remington")] = "CLASS 2: Remington",
+    [GetHashKey("weapon_scarh")] = "CLASS 3: Scar-H"
+```
+
 ## (OPTIONAL) Police weapons below, edit to your liking
 
 ```lua
