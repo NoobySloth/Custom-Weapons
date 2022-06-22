@@ -436,7 +436,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
 ```
 
-## Add the next code to your `devyn-backitems` script
+## Add the next code to your `BackItems.lua` devyn-backitems script
 
 ```lua
     ["weapon_ak47"] = {
