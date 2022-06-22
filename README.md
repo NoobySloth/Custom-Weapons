@@ -11,8 +11,8 @@ This is a **FREE** release!
 
 ## Features
 
-- 17 Add-On Weapons
-- Images for every gun
+- 18 Add-On Weapons
+- Images for every gun / melee
 
 **Supplied Snippets**
 - qb-core
@@ -29,23 +29,26 @@ This is a **FREE** release!
 ```lua
 
 		-- Custom Weapons
-	['weapon_ak47'] 		 = {['name'] = 'weapon_ak47', 	 	  	['label'] = 'AK-47', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_assaultrifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
-	['weapon_de'] 			 = {['name'] = 'weapon_de', 		 	  	['label'] = 'Desert Eagle', 			    ['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'deagle.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A .50 caliber firearm designed to be held with both hands'},
-	['weapon_fnx45'] 		 = {['name'] = 'weapon_fnx45', 	 	  	['label'] = 'FN FNX-45', 			['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'weapon_combat-pistol.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A combat version small firearm designed to be held in one hand'},
-	['weapon_glock17'] 				 = {['name'] = 'weapon_glock17', 			 	['label'] = 'PD Glock 17', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-17.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'PD GUN'},
-	['weapon_m4'] 		 = {['name'] = 'weapon_m4', 	 	  	['label'] = 'PD M4A1', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_carbinerifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle for the Police'},
-	['weapon_m9'] 				 = {['name'] = 'weapon_m9', 			 	['label'] = 'Beretta M9A3', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'm1911.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A M91'},
-	['weapon_m70'] 		 = {['name'] = 'weapon_m70', 	 	  	['label'] = 'M70', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'm70.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
-	['weapon_m1911'] 			 = {['name'] = 'weapon_m1911', 	 	  	['label'] = 'M1911', 			['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'browning.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A hefty firearm designed to be held in one hand (or attempted)'},
-	['weapon_uzi'] 			 = {['name'] = 'weapon_uzi', 		 	  	['label'] = 'UZI', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'uzi.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
-	['weapon_mac10'] 			 = {['name'] = 'weapon_mac10', 		 	  	['label'] = 'MAC-10', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'mac-10.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
-	['weapon_mossberg'] 		 = {['name'] = 'weapon_mossberg', 	 	['label'] = 'Mossberg 500', 		['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',			['image'] = 'mossberg500.png', ['unique'] = true, 	['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A sawn-off smoothbore gun for firing small shot at short range'},
-	['weapon_remington'] 			 = {['name'] = 'weapon_remington', 	 	  	['label'] = 'Remington 870', 			['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',			['image'] = 'remington.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A pump-action smoothbore gun for firing small shot at short range'},
-	['weapon_scarh'] 		 = {['name'] = 'weapon_scarh', 	 	['label'] = 'PD SCAR-H', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'scar.png', ['unique'] = true, 	['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'An extremely versatile assault rifle for any combat situation'},
-	['weapon_shiv'] 				 = {['name'] = 'weapon_shiv', 			 	  	['label'] = 'Shiv', 					['weight'] = 3000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'shiv.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 10.0,     	['description'] = 'An instrument composed of a blade fixed into a handle, used for cutting or as a weapon'},
-	['weapon_ar15'] 		 = {['name'] = 'weapon_ar15', 	 	  	['label'] = 'PD AR-15', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_mcx.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle for the Police'},
-	['weapon_mk14'] 		 = {['name'] = 'weapon_mk14', 	 	  	['label'] = 'PD MK14', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'mk14.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
-	['weapon_huntingrifle'] 		 = {['name'] = 'weapon_huntingrifle', 	 	  	['label'] = 'Hunting Rifle', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'huntingrifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate Rifle for hunting'},
+	-- Custom Weapons
+	['weapon_ak47'] 		 		 = {['name'] = 'weapon_ak47', 	 			  	['label'] = 'AK-47', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_assaultrifle.png', 				['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
+	['weapon_de'] 					 = {['name'] = 'weapon_de', 			 	  	['label'] = 'Desert Eagle',			    ['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'deagle.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A .50 caliber firearm designed to be held with both hands'},
+	['weapon_fnx45'] 				 = {['name'] = 'weapon_fnx45', 	 			  	['label'] = 'FN FNX-45', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'weapon_combat-pistol.png', 			['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A combat version small firearm designed to be held in one hand'},
+	['weapon_glock17'] 				 = {['name'] = 'weapon_glock17', 			 	['label'] = 'PD Glock 17', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-17.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'PD GUN'},
+	['weapon_m4'] 					 = {['name'] = 'weapon_m4', 	 			  	['label'] = 'PD M4A1', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_carbinerifle.png',			 	['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A lightweight automatic rifle for the Police'},
+	['weapon_m9'] 					 = {['name'] = 'weapon_m9', 				 	['label'] = 'Beretta M9A3', 			['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'm1911.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A M91'},
+	['weapon_m70'] 					 = {['name'] = 'weapon_m70', 	 			  	['label'] = 'M70', 						['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'm70.png',  							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
+	['weapon_m1911'] 				 = {['name'] = 'weapon_m1911', 	 			  	['label'] = 'M1911', 					['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'browning.png',  						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A hefty firearm designed to be held in one hand (or attempted)'},
+	['weapon_uzi'] 					 = {['name'] = 'weapon_uzi', 			 	  	['label'] = 'UZI', 						['weight'] = 10000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'uzi.png', 								['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A handheld lightweight machine gun'},
+	['weapon_mac10'] 				 = {['name'] = 'weapon_mac10', 			 	  	['label'] = 'MAC-10', 					['weight'] = 10000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'mac-10.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A handheld lightweight machine gun'},
+	['weapon_mossberg'] 			 = {['name'] = 'weapon_mossberg', 			 	['label'] = 'Mossberg 500', 			['weight'] = 10000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',			['image'] = 'mossberg500.png',						['unique'] = true,	 	['useable'] = false,["created"] = nil,	['description'] = 'A sawn-off smoothbore gun for firing small shot at short range'},
+	['weapon_remington'] 			 = {['name'] = 'weapon_remington', 		 	  	['label'] = 'Remington 870', 			['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',			['image'] = 'remington.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A pump-action smoothbore gun for firing small shot at short range'},
+	['weapon_scarh'] 				 = {['name'] = 'weapon_scarh', 				 	['label'] = 'PD SCAR-H', 				['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'scar.png',								['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'An extremely versatile assault rifle for any combat situation'},
+	['weapon_shiv'] 				 = {['name'] = 'weapon_shiv', 			 	  	['label'] = 'Shiv', 					['weight'] = 3000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'shiv.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'An instrument composed of a blade fixed into a handle, used for cutting or as a weapon'},
+	['weapon_ar15'] 				 = {['name'] = 'weapon_ar15', 	 	 		 	['label'] = 'PD AR-15', 				['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_mcx.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A lightweight automatic rifle for the Police'},
+	['weapon_mk14'] 				 = {['name'] = 'weapon_mk14', 	 			  	['label'] = 'PD MK14', 					['weight'] = 23000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'mk14.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A very accurate single-fire rifle'},
+	['weapon_huntingrifle'] 		 = {['name'] = 'weapon_huntingrifle', 	 	  	['label'] = 'Hunting Rifle', 			['weight'] = 23000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'huntingrifle.png', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A very accurate Rifle for hunting'},
+	['weapon_katana'] 				 = {['name'] = 'weapon_katana', 	 		  	['label'] = 'Katana', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'katana.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A single-edged sword that is the longer of a pair worn by the Japanese samurai.'},
+
 ```
 
 ## Drop the next code in ``weapons.lua`` in qb-core
@@ -65,7 +68,8 @@ This is a **FREE** release!
 	[`weapon_remington`] 		 = {['name'] = 'weapon_remington', 	['label'] = 'Remington 870', 		['ammotype'] = 'AMMO_SHOTGUN',	['damagereason'] = 'Devastated / Pulverized / Shotgunned'},
 	[`weapon_scarh`] 		 = {['name'] = 'weapon_scarh', 	['label'] = 'PD SCAR-H', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_shiv`] 				 = {['name'] = 'weapon_shiv', 			['label'] = 'Shiv', 				['ammotype'] = nil,	['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
-	[`weapon_ar15`] 		 = {['name'] = 'weapon_ar15', 	 	['label'] = 'PD AR-15', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+	[`weapon_katana`] 				 = {['name'] = 'weapon_katana', 			['label'] = 'Katana', 				['ammotype'] = nil,	['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+    [`weapon_ar15`] 		 = {['name'] = 'weapon_ar15', 	 	['label'] = 'PD AR-15', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_mk14`] 		 = {['name'] = 'weapon_mk14', 	 	['label'] = 'PD MK14', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_huntingrifle`] 		 = {['name'] = 'weapon_huntingrifle', 	 	['label'] = 'Hunting Rifle', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 ```
@@ -75,22 +79,23 @@ This is a **FREE** release!
 ```lua
     --Custom Weapons
     ['weapon_ak47'] 			= 0.15,
-    ['weapon_de'] 	                = 0.15,
+    ['weapon_de'] 	            = 0.15,
     ['weapon_fnx45'] 			= 0.15,
-    ['weapon_glock17'] 		        = 0.15,
-    ['weapon_m4'] 			= 0.15,
+    ['weapon_glock17'] 		    = 0.15,
+    ['weapon_m4'] 			    = 0.15,
     ['weapon_mk14'] 			= 0.15,
-    ['weapon_huntingrifle'] 		= 0.20,
+    ['weapon_huntingrifle'] 	= 0.20,
     ['weapon_ar15'] 			= 0.15,
-    ['weapon_m9'] 	                = 0.15,
-    ['weapon_m70'] 			= 0.15,
-    ['weapon_m1911'] 		        = 0.15,
+    ['weapon_m9'] 	            = 0.15,
+    ['weapon_m70'] 			    = 0.15,
+    ['weapon_m1911'] 		    = 0.15,
     ['weapon_mac10'] 			= 0.15,
-    ['weapon_uzi'] 	                = 0.15,
+    ['weapon_uzi'] 	            = 0.15,
     ['weapon_mossberg'] 		= 0.15,
     ['weapon_remington'] 		= 0.15,
     ['weapon_scarh'] 			= 0.15,
-    ['weapon_shiv'] 	            	= 0.15,
+    ['weapon_shiv'] 	        = 0.15,
+    ['weapon_katana'] 	        = 0.15,
 ```
 ## Drop the next code in ``config.lua`` in qb-weapons (about line 209)
 
@@ -287,6 +292,7 @@ local weapons = {
 	'WEAPON_REMINGTON',
 	'WEAPON_SCARH',
 	'WEAPON_SHIV',
+	'WEAPON_KATANA',
 }
 --Weapons that require the Police holster animation
 local holsterableWeapons = {
@@ -417,23 +423,29 @@ Config.WhitelistedWeapons = {
 ## Replace the next code in ``config.lua`` in qb-ambulancejob
 
 ```lua
+    --[[ HIGH CALIBER ]]
     [`WEAPON_DE`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_M4`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_AR15`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_AK47`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_M70`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_SCARH`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_MK14`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
+    --[[ MEDIUM CALIBER ]]
     [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_MAC10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
+    --[[ SMALL CALIBER ]]
     [`WEAPON_M9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M1911`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_FNX45`] = Config.WeaponClasses['SMALL_CALIBER'],
+    --[[ SHOTGUN ]]
     [`WEAPON_REMINGTON`] = Config.WeaponClasses['SHOTGUN'],
     [`WEAPON_MOSSBERG`] = Config.WeaponClasses['SHOTGUN'],
-    [`WEAPON_SHIV`] = Config.WeaponClasses['HEAVY_IMPACT'],
-    [`WEAPON_MK14`] = Config.WeaponClasses['HIGH_CALIBER'],
-    [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
+    --[[ CUTTING ]]
+    [`WEAPON_SHIV`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
 ```
 
 ## Add the next code to your `BackItems.lua` devyn-backitems script
@@ -446,7 +458,7 @@ Config.WhitelistedWeapons = {
         y = -0.17,
         z = 0.08,
         x_rotation = 0.0,
-        y_rotation = -180.0, 
+        y_rotation = -180.0,
         z_rotation = 180.0,
     },
     ["weapon_m70"] = {
@@ -456,7 +468,7 @@ Config.WhitelistedWeapons = {
         y = -0.17,
         z = 0.08,
         x_rotation = 0.0,
-        y_rotation = -180.0, 
+        y_rotation = -180.0,
         z_rotation = 180.0,
     },
     ["weapon_remington"] = {
@@ -466,7 +478,7 @@ Config.WhitelistedWeapons = {
         y = -0.17,
         z = 0.08,
         x_rotation = 0.0,
-        y_rotation = -180.0, 
+        y_rotation = -180.0,
         z_rotation = 180.0,
     },
     ["weapon_huntingrifle"] = {
@@ -516,7 +528,7 @@ Config.WhitelistedWeapons = {
         y = -0.17,
         z = 0.08,
         x_rotation = 0.0,
-        y_rotation = -180.0, 
+        y_rotation = -180.0,
         z_rotation = 180.0,
     },
     ["weapon_scarh"] = {
@@ -538,7 +550,7 @@ Config.WhitelistedWeapons = {
         x_rotation = 0.0,
         y_rotation = -180.0,
         z_rotation = 180.0,
-    }, 
+    },
 ```
 
 ## Add this next line of code to your weaponsTable in `ps-dispatch/client/cl_events.lua`
