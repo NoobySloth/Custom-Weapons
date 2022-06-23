@@ -557,6 +557,16 @@ Config.WhitelistedWeapons = {
         y_rotation = -180.0,
         z_rotation = 180.0,
     },
+    ["weapon_katana"] = {
+		model="w_me_katana",
+		back_bone = 24818,
+		x = -0.2,
+		y = -0.15,
+		z = 0.12,
+		x_rotation = 0.0,
+		y_rotation = -120.0,
+		z_rotation = 180.0,
+    },
 ```
 
 ## Add this next line of code to your weaponsTable in `ps-dispatch/client/cl_events.lua`
