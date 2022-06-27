@@ -11,7 +11,7 @@ This is a **FREE** release!
 
 ## Features
 
-- 18 Add-On Weapons
+- 19 Add-On Weapons
 - Images for every gun / melee
 
 **Supplied Snippets**
