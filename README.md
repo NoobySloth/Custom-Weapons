@@ -11,7 +11,7 @@ This is a **FREE** release!
 
 ## Features
 
-- 19 Add-On Weapons
+- 20 Add-On Weapons
 - Images for every gun / melee
 
 **Supplied Snippets**
@@ -47,6 +47,7 @@ This is a **FREE** release!
 	['weapon_huntingrifle'] 		 = {['name'] = 'weapon_huntingrifle', 	 	  	['label'] = 'Hunting Rifle', 			['weight'] = 23000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'huntingrifle.png', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A very accurate Rifle for hunting'},
 	['weapon_katana'] 				 = {['name'] = 'weapon_katana', 	 		  	['label'] = 'Katana', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'katana.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A single-edged sword that is the longer of a pair worn by the Japanese samurai.'},
 	['weapon_sledgehammer'] 				 = {['name'] = 'weapon_sledgehammer', 	 		  	['label'] = 'Sledge Hammer', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'sledgehammer.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A Sledge Hammer to destroy peoples heads'},
+	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = '???', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
 
 ```
 
@@ -72,6 +73,8 @@ This is a **FREE** release!
         [`weapon_ar15`] 		 = {['name'] = 'weapon_ar15', 	 	['label'] = 'PD AR-15', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_mk14`] 		 = {['name'] = 'weapon_mk14', 	 	['label'] = 'PD MK14', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_huntingrifle`] 		 = {['name'] = 'weapon_huntingrifle', 	 	['label'] = 'Hunting Rifle', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
+	[`weapon_mp9`] 			 = {['name'] = 'weapon_mp9', 		['label'] = 'MP9', 			['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
+
 ```
 
 ## Drop the next code in ``qb-weapons/config.lua``
@@ -91,6 +94,7 @@ This is a **FREE** release!
     ['weapon_m1911'] 		    = 0.15,
     ['weapon_mac10'] 			= 0.15,
     ['weapon_uzi'] 	            = 0.15,
+    ['weapon_mp9'] 	            = 0.15,
     ['weapon_mossberg'] 		= 0.15,
     ['weapon_remington'] 		= 0.15,
     ['weapon_scarh'] 			= 0.15,
@@ -133,6 +137,26 @@ This is a **FREE** release!
         ['suppressor'] = {
             component = 'COMPONENT_AT_PI_SUPP_02',
             item = 'pistol_suppressor',
+        },
+    },
+    ['WEAPON_MP9'] = {
+        ['defaultclip'] = {
+            component = 'COMPONENT_MP9_CLIP_01',
+            item = 'microsmg_defaultclip',
+            type = 'clip',
+        },
+        ['extendedclip'] = {
+            component = 'COMPONENT_MP9_CLIP_02',
+            item = 'microsmg_extendedclip',
+            type = 'clip',
+        },
+        ['suppressor'] = {
+            component = 'COMPONENT_AT_AR_SUPP_02',
+            item = 'pistol_suppressor',
+        },
+        ['scope'] = {
+            component = 'COMPONENT_AT_SCOPE_MACRO',
+            item = 'microsmg_scope',
         },
     },
     ['WEAPON_UZI'] = {
@@ -218,6 +242,7 @@ local weapons = {
 	'WEAPON_M1911',
 	'WEAPON_MAC10',
 	'WEAPON_UZI',
+	'WEAPON_MP9',
 	'WEAPON_MOSSBERG',
 	'WEAPON_REMINGTON',
 	'WEAPON_SCARH',
@@ -254,6 +279,7 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_m1911")] = 0.4,
 	[GetHashKey("weapon_mac10")] = 0.7,
 	[GetHashKey("weapon_uzi")] = 0.7,
+	[GetHashKey("weapon_mp9")] = 0.7,
 	[GetHashKey("weapon_mossberg")] = 0.7,
 	[GetHashKey("weapon_remington")] = 0.7,
 	[GetHashKey("weapon_scarh")] = 0.5,
@@ -331,6 +357,9 @@ Config.WhitelistedWeapons = {
     [`weapon_uzi`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_mp9`] = {
+        ["timeOut"] = 10000
+    },
     [`weapon_mac10`] = {
         ["timeOut"] = 10000
     },
@@ -357,8 +386,9 @@ Config.WhitelistedWeapons = {
     --[[ MEDIUM CALIBER ]]
     [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_MAC10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
-    [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_MP9`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     --[[ SMALL CALIBER ]]
+    [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M1911`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_FNX45`] = Config.WeaponClasses['SMALL_CALIBER'],
@@ -425,6 +455,16 @@ Config.WhitelistedWeapons = {
         y_rotation = -180.0,
         z_rotation = 0.0,
     },
+    ["weapon_mp9"] = {
+        model="w_sb_mp9",
+        back_bone = 24818,
+        x =  0.12,
+        y = -0.17,
+        z = -0.0,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 0.0,
+    },
     ["weapon_mk14"] = {
         model="w_sr_mk14",
         back_bone = 24818,
@@ -476,14 +516,14 @@ Config.WhitelistedWeapons = {
         z_rotation = 180.0,
     },
     ["weapon_katana"] = {
-		model="w_me_katana",
-		back_bone = 24818,
-		x = -0.2,
-		y = -0.15,
-		z = 0.12,
-		x_rotation = 0.0,
-		y_rotation = -120.0,
-		z_rotation = 180.0,
+	model="w_me_katana",
+	back_bone = 24818,
+	x = -0.2,
+	y = -0.15,
+	z = 0.12,
+	x_rotation = 0.0,
+	y_rotation = -120.0,
+	z_rotation = 180.0,
     },
 ```
 
@@ -504,6 +544,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_m1911")] = "CLASS 1: 1911",
     [GetHashKey("weapon_mac10")] = "CLASS 2: Mac-10",
     [GetHashKey("weapon_uzi")] = "CLASS 2: Uzi",
+    [GetHashKey("weapon_mp9")] = "CLASS 2: MP9",
     [GetHashKey("weapon_mossberg")] = "CLASS 2: Mossberg",
     [GetHashKey("weapon_remington")] = "CLASS 2: Remington",
     [GetHashKey("weapon_scarh")] = "CLASS 3: Scar-H"
