@@ -23,12 +23,10 @@ This is a **FREE** release!
 - qb-ambulancejob
 
 ## Installation
-- Put the ``custom_weapons`` into your ``resource`` folder.
+- Put the ``custom_weapons`` into your ``resources`` folder.
 
-## Drop first code in ``items.lua`` in qb-core
+## Drop first code in ``qb-core/shared/items.lua``
 ```lua
-
-		-- Custom Weapons
 	-- Custom Weapons
 	['weapon_ak47'] 		 		 = {['name'] = 'weapon_ak47', 	 			  	['label'] = 'AK-47', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_assaultrifle.png', 				['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
 	['weapon_de'] 					 = {['name'] = 'weapon_de', 			 	  	['label'] = 'Desert Eagle',			    ['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'deagle.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A .50 caliber firearm designed to be held with both hands'},
@@ -52,7 +50,7 @@ This is a **FREE** release!
 
 ```
 
-## Drop the next code in ``weapons.lua`` in qb-core
+## Drop the next code in ``qb-core/shared/weapons.lua``
 
 ```lua
 	[`weapon_ak47`] 		 = {['name'] = 'weapon_ak47', 	 	['label'] = 'AK-47', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
@@ -76,7 +74,7 @@ This is a **FREE** release!
 	[`weapon_huntingrifle`] 		 = {['name'] = 'weapon_huntingrifle', 	 	['label'] = 'Hunting Rifle', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 ```
 
-## Drop the next code in ``config.lua`` in qb-weapons
+## Drop the next code in ``qb-weapons/config.lua``
 
 ```lua
     --Custom Weapons
@@ -100,7 +98,7 @@ This is a **FREE** release!
     ['weapon_katana'] 	        = 0.15,
     ['weapon_sledgehammer'] 	        = 0.15,
 ```
-## Drop the next code in ``config.lua`` in qb-weapons (about line 209)
+## Drop the next code in ``qb-weapons/config.lua`` (about line 209)
 
 ```lua
     ['WEAPON_M9'] = {
@@ -202,81 +200,10 @@ This is a **FREE** release!
     },
 ```
 
-## Replace the next code in ``weapdraw.lua`` in qb-smallresources
+## Replace the next code in ``qb-smallresources/client/weapdraw.lua``
 
 ```lua
 local weapons = {
-	'WEAPON_KNIFE',
-	'WEAPON_NIGHTSTICK',
-	'WEAPON_BREAD',
-	'WEAPON_FLASHLIGHT',
-	'WEAPON_HAMMER',
-	'WEAPON_BAT',
-	'WEAPON_GOLFCLUB',
-	'WEAPON_CROWBAR',
-	'WEAPON_BOTTLE',
-	'WEAPON_DAGGER',
-	'WEAPON_HATCHET',
-	'WEAPON_MACHETE',
-	'WEAPON_SWITCHBLADE',
-	'WEAPON_BATTLEAXE',
-	'WEAPON_POOLCUE',
-	'WEAPON_WRENCH',
-	'WEAPON_PISTOL',
-	'WEAPON_PISTOL_MK2',
-	'WEAPON_COMBATPISTOL',
-	'WEAPON_APPISTOL',
-	'WEAPON_PISTOL50',
-	'WEAPON_REVOLVER',
-	'WEAPON_SNSPISTOL',
-	'WEAPON_HEAVYPISTOL',
-	'WEAPON_VINTAGEPISTOL',
-	'WEAPON_MICROSMG',
-	'WEAPON_SMG',
-	'WEAPON_ASSAULTSMG',
-	'WEAPON_MINISMG',
-	'WEAPON_MACHINEPISTOL',
-	'WEAPON_COMBATPDW',
-	'WEAPON_PUMPSHOTGUN',
-	'WEAPON_SAWNOFFSHOTGUN',
-	'WEAPON_ASSAULTSHOTGUN',
-	'WEAPON_BULLPUPSHOTGUN',
-	'WEAPON_HEAVYSHOTGUN',
-	'WEAPON_ASSAULTRIFLE',
-	'WEAPON_CARBINERIFLE',
-	'WEAPON_ADVANCEDRIFLE',
-	'WEAPON_SPECIALCARBINE',
-	'WEAPON_BULLPUPRIFLE',
-	'WEAPON_COMPACTRIFLE',
-	'WEAPON_MG',
-	'WEAPON_COMBATMG',
-	'WEAPON_GUSENBERG',
-	'WEAPON_SNIPERRIFLE',
-	'WEAPON_HEAVYSNIPER',
-	'WEAPON_MARKSMANRIFLE',
-	'WEAPON_GRENADELAUNCHER',
-	'WEAPON_RPG',
-	'WEAPON_STINGER',
-	'WEAPON_MINIGUN',
-	'WEAPON_GRENADE',
-	'WEAPON_STICKYBOMB',
-	'WEAPON_SMOKEGRENADE',
-	'WEAPON_BZGAS',
-	'WEAPON_MOLOTOV',
-	'WEAPON_DIGISCANNER',
-	'WEAPON_FIREWORK',
-	'WEAPON_MUSKET',
-	'WEAPON_STUNGUN',
-	'WEAPON_HOMINGLAUNCHER',
-	'WEAPON_PROXMINE',
-	'WEAPON_FLAREGUN',
-	'WEAPON_MARKSMANPISTOL',
-	'WEAPON_RAILGUN',
-	'WEAPON_DBSHOTGUN',
-	'WEAPON_AUTOSHOTGUN',
-	'WEAPON_COMPACTLAUNCHER',
-	'WEAPON_PIPEBOMB',
-	'WEAPON_DOUBLEACTION',
 	--Custom Weapon
 	'WEAPON_AK47',
 	'WEAPON_M9',
@@ -301,15 +228,6 @@ local weapons = {
 --Weapons that require the Police holster animation
 local holsterableWeapons = {
 	--'WEAPON_STUNGUN',
-	'WEAPON_PISTOL',
-	'WEAPON_PISTOL_MK2',
-	'WEAPON_COMBATPISTOL',
-	'WEAPON_APPISTOL',
-	'WEAPON_PISTOL50',
-	'WEAPON_REVOLVER',
-	'WEAPON_SNSPISTOL',
-	'WEAPON_HEAVYPISTOL',
-	'WEAPON_VINTAGEPISTOL',
 	--Custom Weapon
 	'WEAPON_DE',
 	'WEAPON_GLOCK17',
@@ -319,7 +237,7 @@ local holsterableWeapons = {
 }
 ```
 
-## Drop the next code in ``recoil.lua`` in qb-smallresources ( LINE 107 )
+## Drop the next code in ``qb-smallresources/client/recoil.lua`` ( LINE 107 )
 
 ```lua
 	-- CUSTOM WEAPONS
@@ -340,7 +258,7 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_remington")] = 0.7,
 	[GetHashKey("weapon_scarh")] = 0.5,
 ```
-## Replace the next code in ``config.lua`` in qb-jewelery
+## Replace the next code in ``qb-jewelery/config.lua``
 
 ```lua
 Config.WhitelistedWeapons = {
@@ -424,7 +342,7 @@ Config.WhitelistedWeapons = {
     },
 }
 ```
-## Replace the next code in ``config.lua`` in qb-ambulancejob
+## Replace the next code in ``qb-ambulancejob/config.lua``
 
 ```lua
     --[[ HIGH CALIBER ]]
@@ -454,7 +372,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_SLEDGEHAMMER`] = Config.WeaponClasses['HEAVY_IMPACT'],
 ```
 
-## Add the next code to your `BackItems.lua` devyn-backitems script
+## Add the next code to your `BackItems.lua` [devyn-backitems](https://github.com/devin-monro/devyn-backitems) script (OPTIONAL)
 
 ```lua
     ["weapon_ak47"] = {
@@ -591,7 +509,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_scarh")] = "CLASS 3: Scar-H"
 ```
 
-## (OPTIONAL) Police weapons below, edit to your liking
+## (OPTIONAL) Add the weapons to your police armory ``qb-policejob/config.lua``
 
 ```lua
 Config.Items = {
