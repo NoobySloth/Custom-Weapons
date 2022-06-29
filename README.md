@@ -11,7 +11,7 @@ This is a **FREE** release!
 
 ## Features
 
-- 20 Add-On Weapons
+- 21 Add-On Weapons
 - Images for every gun / melee
 
 **Supplied Snippets**
@@ -48,6 +48,7 @@ This is a **FREE** release!
 	['weapon_katana'] 				 = {['name'] = 'weapon_katana', 	 		  	['label'] = 'Katana', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'katana.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A single-edged sword that is the longer of a pair worn by the Japanese samurai.'},
 	['weapon_sledgehammer'] 				 = {['name'] = 'weapon_sledgehammer', 	 		  	['label'] = 'Sledge Hammer', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'sledgehammer.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A Sledge Hammer to destroy peoples heads'},
 	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = '???', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
+	['weapon_m110'] 		 = {['name'] = 'weapon_m110', 	 	  	['label'] = 'M110', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = '???', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
 
 ```
 
@@ -74,6 +75,7 @@ This is a **FREE** release!
 	[`weapon_mk14`] 		 = {['name'] = 'weapon_mk14', 	 	['label'] = 'PD MK14', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_huntingrifle`] 		 = {['name'] = 'weapon_huntingrifle', 	 	['label'] = 'Hunting Rifle', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_mp9`] 			 = {['name'] = 'weapon_mp9', 		['label'] = 'MP9', 			['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
+	[`weapon_m110`] 		 = {['name'] = 'weapon_m110', 	 	['label'] = 'M110', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 
 ```
 
@@ -82,24 +84,25 @@ This is a **FREE** release!
 ```lua
     --Custom Weapons
     ['weapon_ak47'] 			= 0.15,
-    ['weapon_de'] 	            = 0.15,
+    ['weapon_de'] 	                = 0.15,
     ['weapon_fnx45'] 			= 0.15,
-    ['weapon_glock17'] 		    = 0.15,
-    ['weapon_m4'] 			    = 0.15,
+    ['weapon_glock17'] 		        = 0.15,
+    ['weapon_m4'] 			= 0.15,
     ['weapon_mk14'] 			= 0.15,
-    ['weapon_huntingrifle'] 	= 0.20,
+    ['weapon_m110'] 			= 0.15,
+    ['weapon_huntingrifle'] 	        = 0.20,
     ['weapon_ar15'] 			= 0.15,
-    ['weapon_m9'] 	            = 0.15,
-    ['weapon_m70'] 			    = 0.15,
-    ['weapon_m1911'] 		    = 0.15,
+    ['weapon_m9'] 	                = 0.15,
+    ['weapon_m70'] 			= 0.15,
+    ['weapon_m1911'] 		        = 0.15,
     ['weapon_mac10'] 			= 0.15,
-    ['weapon_uzi'] 	            = 0.15,
-    ['weapon_mp9'] 	            = 0.15,
+    ['weapon_uzi'] 	                = 0.15,
+    ['weapon_mp9'] 	                = 0.15,
     ['weapon_mossberg'] 		= 0.15,
     ['weapon_remington'] 		= 0.15,
     ['weapon_scarh'] 			= 0.15,
-    ['weapon_shiv'] 	        = 0.15,
-    ['weapon_katana'] 	        = 0.15,
+    ['weapon_shiv'] 	                = 0.15,
+    ['weapon_katana'] 	                = 0.15,
     ['weapon_sledgehammer'] 	        = 0.15,
 ```
 ## Drop the next code in ``qb-weapons/config.lua`` (about line 209)
@@ -222,6 +225,22 @@ This is a **FREE** release!
             item = 'rifle_suppressor',
         },
     },
+    ['WEAPON_M110'] = {
+        ['defaultclip'] = {
+            component = 'COMPONENT_M110_CLIP_01',
+            item = 'marksmanrifle_defaultclip',
+            type = 'clip',
+        },
+        ['extendedclip'] = {
+            component = 'COMPONENT_M110_CLIP_02',
+            item = 'marksmanrifle_extendedclip',
+            type = 'clip',
+        },
+        ['suppressor'] = {
+            component = 'COMPONENT_AT_AR_SUPP',
+            item = 'rifle_suppressor',
+        },
+    },
 ```
 
 ## Replace the next code in ``qb-smallresources/client/weapdraw.lua``
@@ -243,6 +262,7 @@ local weapons = {
 	'WEAPON_MAC10',
 	'WEAPON_UZI',
 	'WEAPON_MP9',
+	'WEAPON_M110',
 	'WEAPON_MOSSBERG',
 	'WEAPON_REMINGTON',
 	'WEAPON_SCARH',
@@ -272,6 +292,7 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_glock17")] = 0.3,
 	[GetHashKey("weapon_m4")] = 0.3,
 	[GetHashKey("weapon_mk14")] = 0.4,
+	[GetHashKey("weapon_m110")] = 0.4,
 	[GetHashKey("weapon_huntingrifle")] = 0.4,
 	[GetHashKey("weapon_ar15")] = 0.4,
 	[GetHashKey("weapon_m9")] = 0.4,
@@ -369,6 +390,9 @@ Config.WhitelistedWeapons = {
     [`weapon_m1911`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_m110`] = {
+        ["timeOut"] = 10000
+    },
 }
 ```
 ## Replace the next code in ``qb-ambulancejob/config.lua``
@@ -382,6 +406,7 @@ Config.WhitelistedWeapons = {
     [`WEAPON_M70`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_SCARH`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_MK14`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_M110`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
     --[[ MEDIUM CALIBER ]]
     [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
@@ -431,6 +456,16 @@ Config.WhitelistedWeapons = {
         x = -0.0,
         y = -0.17,
         z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
+    ["weapon_m110"] = {
+        model="w_sr_m110",
+        back_bone = 24818,
+        x = 0.0,
+        y = -0.17,
+        z = -0.12,
         x_rotation = 0.0,
         y_rotation = -180.0,
         z_rotation = 180.0,
@@ -537,6 +572,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_glock17")] = "CLASS 1: Glock 17",
     [GetHashKey("weapon_m4")] = "CLASS 3: M4",
     [GetHashKey("weapon_mk14")] = "CLASS 4: MK 14",
+    [GetHashKey("weapon_mk14")] = "CLASS 4: M110",
     [GetHashKey("weapon_huntingrifle")] = "CLASS 3: Hunting Rifle",
     [GetHashKey("weapon_ar15")] = "CLASS 3: AR-15",
     [GetHashKey("weapon_m9")] = "CLASS 1: M9",
