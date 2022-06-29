@@ -12,7 +12,7 @@ This is a **FREE** release!
 ## Features
 
 - 21 Add-On Weapons
-- Images for every gun / melee
+- Images for almost every gun / melee
 
 **Supplied Snippets**
 - qb-core
