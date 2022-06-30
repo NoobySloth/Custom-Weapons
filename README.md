@@ -11,7 +11,7 @@ This is a **FREE** release!
 
 ## Features
 
-- 21 Add-On Weapons
+- 22 Add-On Weapons
 - Images for almost every gun / melee
 
 **Supplied Snippets**
@@ -49,6 +49,7 @@ This is a **FREE** release!
 	['weapon_sledgehammer'] 				 = {['name'] = 'weapon_sledgehammer', 	 		  	['label'] = 'Sledge Hammer', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'sledgehammer.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A Sledge Hammer to destroy peoples heads'},
 	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = '???', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
 	['weapon_m110'] 		 = {['name'] = 'weapon_m110', 	 	  	['label'] = 'M110', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = '???', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
+	['weapon_hk416'] 		 = {['name'] = 'weapon_hk416', 	 	  	['label'] = 'HK-416', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_carbinerifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle'},
 
 ```
 
@@ -76,6 +77,7 @@ This is a **FREE** release!
 	[`weapon_huntingrifle`] 		 = {['name'] = 'weapon_huntingrifle', 	 	['label'] = 'Hunting Rifle', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_mp9`] 			 = {['name'] = 'weapon_mp9', 		['label'] = 'MP9', 			['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_m110`] 		 = {['name'] = 'weapon_m110', 	 	['label'] = 'M110', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
+	[`weapon_hk416`] 		 = {['name'] = 'weapon_hk416', 	 	['label'] = 'HK-416', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 
 ```
 
@@ -88,6 +90,7 @@ This is a **FREE** release!
     ['weapon_fnx45'] 			= 0.15,
     ['weapon_glock17'] 		        = 0.15,
     ['weapon_m4'] 			= 0.15,
+    ['weapon_hk416'] 			= 0.15,
     ['weapon_mk14'] 			= 0.15,
     ['weapon_m110'] 			= 0.15,
     ['weapon_huntingrifle'] 	        = 0.20,
@@ -241,6 +244,26 @@ This is a **FREE** release!
             item = 'rifle_suppressor',
         },
     },
+    ['WEAPON_HK416'] = {
+        ['defaultclip'] = {
+            component = 'COMPONENT_HK416_CLIP_01',
+            item = 'carbinerifle_defaultclip',
+            type = 'clip',
+        },
+        ['extendedclip'] = {
+            component = 'COMPONENT_HK416_CLIP_02',
+            item = 'carbinerifle_extendedclip',
+            type = 'clip',
+        },
+        ['flashlight'] = {
+            component = 'COMPONENT_AT_AR_FLSH',
+            item = 'rifle_flashlight',
+        },
+        ['suppressor'] = {
+            component = 'COMPONENT_AT_AR_SUPP',
+            item = 'rifle_suppressor',
+        },
+    },
 ```
 
 ## Replace the next code in ``qb-smallresources/client/weapdraw.lua``
@@ -254,6 +277,7 @@ local weapons = {
 	'WEAPON_DE',
 	'WEAPON_GLOCK17',
 	'WEAPON_M4',
+	'WEAPON_HK416',
 	'WEAPON_MK14',
 	'WEAPON_HUNTINGRIFLE',
 	'WEAPON_AR15',
@@ -291,6 +315,7 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_fnx45")] = 0.3,
 	[GetHashKey("weapon_glock17")] = 0.3,
 	[GetHashKey("weapon_m4")] = 0.3,
+	[GetHashKey("weapon_hk416")] = 0.3,
 	[GetHashKey("weapon_mk14")] = 0.4,
 	[GetHashKey("weapon_m110")] = 0.4,
 	[GetHashKey("weapon_huntingrifle")] = 0.4,
@@ -348,6 +373,9 @@ Config.WhitelistedWeapons = {
     [`weapon_m4`] = {
         ["timeOut"] = 10000
     },
+    [`weapon_hk416`] = {
+        ["timeOut"] = 10000
+    },
     [`weapon_ar15`] = {
         ["timeOut"] = 10000
     },
@@ -401,6 +429,7 @@ Config.WhitelistedWeapons = {
     --[[ HIGH CALIBER ]]
     [`WEAPON_DE`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_M4`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_HK416`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_AR15`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_AK47`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_M70`] = Config.WeaponClasses['HIGH_CALIBER'],
@@ -530,6 +559,16 @@ Config.WhitelistedWeapons = {
         y_rotation = -180.0,
         z_rotation = 180.0,
     },
+    ["weapon_hk416"] = {
+        model="w_ar_hk416",
+        back_bone = 24818,
+        x = -0.0,
+        y = -0.17,
+        z = 0.08,
+        x_rotation = 0.0,
+        y_rotation = -180.0,
+        z_rotation = 180.0,
+    },
     ["weapon_scarh"] = {
         model="w_ar_scarh",
         back_bone = 24818,
@@ -571,6 +610,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_fnx45")] = "CLASS 1: FN .45",
     [GetHashKey("weapon_glock17")] = "CLASS 1: Glock 17",
     [GetHashKey("weapon_m4")] = "CLASS 3: M4",
+    [GetHashKey("weapon_hk416")] = "CLASS 3: HK-416",
     [GetHashKey("weapon_mk14")] = "CLASS 4: MK 14",
     [GetHashKey("weapon_mk14")] = "CLASS 4: M110",
     [GetHashKey("weapon_huntingrifle")] = "CLASS 3: Hunting Rifle",
