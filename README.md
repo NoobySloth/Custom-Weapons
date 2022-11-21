@@ -12,7 +12,7 @@ This is a **FREE** release!
 
 ## Features
 
-- 22 Add-On Weapons + NoPixel 3.0 Gun Pack
+- 29 Add-On Weapons
 - Images for almost every gun / melee
 
 **Supplied Snippets**
@@ -51,7 +51,13 @@ This is a **FREE** release!
 	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = '???', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
 	['weapon_m110'] 		 = {['name'] = 'weapon_m110', 	 	  	['label'] = 'M110', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = '???', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
 	['weapon_hk416'] 		 = {['name'] = 'weapon_hk416', 	 	  	['label'] = 'HK-416', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_carbinerifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle'},
-
+	['weapon_ak74'] 		 		 = {['name'] = 'weapon_ak74', 	 			  	['label'] = 'AK-74', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_ak74.png', 				        ['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
+	['weapon_aks74'] 		 		 = {['name'] = 'weapon_aks74', 	 			  	['label'] = 'AK-S74', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_aks74.png', 				    ['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
+	['weapon_glock18c'] 			 = {['name'] = 'weapon_glock18c', 			 	['label'] = 'Glock 18C', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-18c.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'semi automatic pistol'},
+	['weapon_glock22'] 			     = {['name'] = 'weapon_glock22', 			 	['label'] = 'Glock 22', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-22.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'pistol'},
+	['weapon_mp5'] 				 	 = {['name'] = 'weapon_mp5', 			 	  	['label'] = 'H&K MP5', 					['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'MP5.png', 			                    ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A handheld lightweight machine gun'},
+	['weapon_karambit'] 			 = {['name'] = 'weapon_karambit', 			 	['label'] = 'Karambit', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_karambit.png', 		            ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A short knife with a pointed and edged blade, used as a weapon'},
+	['weapon_colbaton'] 			 = {['name'] = 'weapon_colbaton', 		 	  	['label'] = 'PD Baton', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_colbaton.png', 	
 ```
 
 ## Drop the next code in ``qb-core/shared/weapons.lua``
@@ -79,7 +85,13 @@ This is a **FREE** release!
 	[`weapon_mp9`] 			 = {['name'] = 'weapon_mp9', 		['label'] = 'MP9', 			['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_m110`] 		 = {['name'] = 'weapon_m110', 	 	['label'] = 'M110', 				['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Ended / Sniped / Shot down / Floored'},
 	[`weapon_hk416`] 		 = {['name'] = 'weapon_hk416', 	 	['label'] = 'HK-416', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-
+	[`weapon_ak74`] 		 = {['name'] = 'weapon_ak74', 	 	    ['label'] = 'AK-74', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+	[`weapon_aks74`] 		 = {['name'] = 'weapon_aks74', 	 	    ['label'] = 'AK-S74', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+	[`weapon_glock22`] 		 = {['name'] = 'weapon_glock22', 		['label'] = 'Glock 22', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+	[`weapon_glock18c`] 	 = {['name'] = 'weapon_glock18c', 		['label'] = 'Glock 18C', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+	[`weapon_mp5`] 			 = {['name'] = 'weapon_mp5', 		    ['label'] = 'H&K MP5', 				['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
+	[`weapon_karambit`] 	 = {['name'] = 'weapon_karambit', 		['label'] = 'Karambit', 			['ammotype'] = nil,	            ['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`weapon_colbaton`] 	 = {['name'] = 'weapon_colbaton', 		['label'] = 'Baton', 				['ammotype'] = nil,	            ['damagereason'] = 'Beat'},
 ```
 
 ## Drop the next code in ``qb-weapons/config.lua``
@@ -108,6 +120,11 @@ This is a **FREE** release!
     ['weapon_shiv'] 	                = 0.15,
     ['weapon_katana'] 	                = 0.15,
     ['weapon_sledgehammer'] 	        = 0.15,
+    ['weapon_mp5'] 			= 0.15,
+    ['weapon_glock18c'] 		= 0.15,
+    ['weapon_glock22'] 			= 0.15,
+    ['weapon_aks74'] 			= 0.15,
+    ['weapon_ak74'] 			= 0.15,
 ```
 ## Drop the next code in ``qb-weapons/config.lua`` (about line 209)
 
@@ -294,6 +311,13 @@ local weapons = {
 	'WEAPON_SHIV',
 	'WEAPON_KATANA',
 	'WEAPON_SLEDGEHAMMER',
+	'WEAPON_COLBATON',
+	'WEAPON_KARAMBIT',
+	'WEAPON_MP5',
+	'WEAPON_GLOCK18C',
+	'WEAPON_GLOCK22',
+	'WEAPON_AKS74',
+	'WEAPON_AK74',
 }
 --Weapons that require the Police holster animation
 local holsterableWeapons = {
@@ -304,6 +328,8 @@ local holsterableWeapons = {
 	'WEAPON_M9',
 	'WEAPON_M1911',
 	'WEAPON_FNX45',
+	'WEAPON_GLOCK18C',
+	'WEAPON_GLOCK22',
 }
 ```
 
