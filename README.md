@@ -8,10 +8,11 @@ This is a **FREE** release!
 - LeSiiN
 - NoobySloth
 - Castar
+- bunny
 
 ## Features
 
-- 22 Add-On Weapons
+- 22 Add-On Weapons + NoPixel 3.0 Gun Pack
 - Images for almost every gun / melee
 
 **Supplied Snippets**
