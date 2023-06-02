@@ -1,3 +1,5 @@
+#SUPPORT NOT PROVIDED BY NOOBYSLOTH OR EXPAND NETWORK DISCORD!
+
 # Addon guns for QBCore
 
 This is a **FREE** release!
