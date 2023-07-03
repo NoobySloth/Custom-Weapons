@@ -1,3 +1,6 @@
+# PLEASE DO NOT DM OR ASK FOR SUPPORT IN OUR DISCORDS
+### Feel free to ask in the support channel of Project Sloth (https://discord.gg/projectsloth)
+
 # Addon guns for QBCore
 
 This is a **FREE** release!
