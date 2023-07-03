@@ -1,7 +1,3 @@
-# SUPPORT NOT PROVIDED BY NOOBYSLOTH OR EXPAND NETWORK DISCORD!
-
-### No longer supporting QB inventory so all new weapons will be ox inventory only, if you wish to assist, please PR for QB INV
-
 # Addon guns for QBCore
 
 This is a **FREE** release!
