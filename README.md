@@ -1,10 +1,13 @@
 # SUPPORT NOT PROVIDED BY NOOBYSLOTH OR EXPAND NETWORK DISCORD!
 
+### No longer supporting QB inventory so all new weapons will be ox inventory only, if you wish to assist, please PR for QB INV
+
 # Addon guns for QBCore
 
 This is a **FREE** release!
 
 ## Credits
+
 - Original Model Makers (gta5mods)
 - Xandrice
 - LeSiiN
@@ -14,11 +17,13 @@ This is a **FREE** release!
 
 ## Features
 
-- 29 Add-On Weapons
+- 45 Add-On Weapons
 - Images for almost every gun / melee
 
 **Supplied Snippets**
+
 - qb-core
+- ox_inventory (knives only)
 - qb-weapons
 - qb-smallresources
 - qb-policejob
@@ -26,9 +31,11 @@ This is a **FREE** release!
 - qb-ambulancejob
 
 ## Installation
-- Put the ``custom_weapons`` into your ``resources`` folder.
 
-## Drop first code in ``qb-core/shared/items.lua``
+- Put the `custom_weapons` into your `resources` folder.
+
+## Drop first code in `qb-core/shared/items.lua`
+
 ```lua
 	-- Custom Weapons
 	['weapon_ak47'] 		 		 = {['name'] = 'weapon_ak47', 	 			  	['label'] = 'AK-47', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_assaultrifle.png', 				['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
@@ -58,11 +65,101 @@ This is a **FREE** release!
 	['weapon_glock18c'] 			 = {['name'] = 'weapon_glock18c', 			 	['label'] = 'Glock 18C', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-18c.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'semi automatic pistol'},
 	['weapon_glock22'] 			     = {['name'] = 'weapon_glock22', 			 	['label'] = 'Glock 22', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-22.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'pistol'},
 	['weapon_mp5'] 				 	 = {['name'] = 'weapon_mp5', 			 	  	['label'] = 'H&K MP5', 					['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'MP5.png', 			                    ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A handheld lightweight machine gun'},
-	['weapon_karambit'] 			 = {['name'] = 'weapon_karambit', 			 	['label'] = 'Karambit', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_karambit.png', 		            ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A short knife with a pointed and edged blade, used as a weapon'},
-	['weapon_colbaton'] 			 = {['name'] = 'weapon_colbaton', 		 	  	['label'] = 'PD Baton', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_colbaton.png', ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A Pd Baton'}, 	
+['weapon_colbaton'] 			 = {['name'] = 'weapon_colbaton', 		 	  	['label'] = 'PD Baton', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_colbaton.png', ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A Pd Baton'},
 ```
 
-## Drop the next code in ``qb-core/shared/weapons.lua``
+## (knives) If using OX then place in `ox_inventory/data/weapons.lua`
+
+```lua
+        --CUSTOM WEAPONS
+		['WEAPON_PERFORATOR'] = {
+			label = 'The Perforator',
+			weight = 500,
+			durability = 0.1,
+		},
+		['WEAPON_BAYONETKNIFE'] = {
+			label = 'Bayonet Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_BLUEBFKNIFE'] = {
+			label = 'Blue Steel Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_BFKNIFE'] = {
+			label = 'Vanilla Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_CHBFKNIFE'] = {
+			label = 'Case Hardened Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_CRIMSONBFKNIFE'] = {
+			label = 'Crimson Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_FADEBFKNIFE'] = {
+			label = 'Fade Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_FLIPKNIFE'] = {
+			label = 'Flip Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_FORESTBFKNIFE'] = {
+			label = 'Forest Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_GUTKNIFE'] = {
+			label = 'Gut Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_HUNTSMANKNIFE'] = {
+			label = 'Huntsman Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_KARAMBITKNIFE'] = {
+			label = 'Karamabit Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_SAFARIBFKNIFE'] = {
+			label = 'Safari Mesh Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_SCORCHEDBFKNIFE'] = {
+			label = 'Scorched Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_SLAUGHTERBFKNIFE'] = {
+			label = 'Slaughter Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_STAINEDRBFKNIFE'] = {
+			label = 'Stained Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+		['WEAPON_URBANRBFKNIFE'] = {
+			label = 'Urban Masked Butterfly Knife',
+			weight = 300,
+			durability = 0.1,
+		},
+```
+
+## Drop the next code in `qb-core/shared/weapons.lua`
 
 ```lua
 	[`weapon_ak47`] 		 = {['name'] = 'weapon_ak47', 	 	['label'] = 'AK-47', 				['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
@@ -92,43 +189,60 @@ This is a **FREE** release!
 	[`weapon_glock22`] 		 = {['name'] = 'weapon_glock22', 		['label'] = 'Glock 22', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_glock18c`] 	 = {['name'] = 'weapon_glock18c', 		['label'] = 'Glock 18C', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_mp5`] 			 = {['name'] = 'weapon_mp5', 		    ['label'] = 'H&K MP5', 				['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
-	[`weapon_karambit`] 	 = {['name'] = 'weapon_karambit', 		['label'] = 'Karambit', 			['ammotype'] = nil,	            ['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
 	[`weapon_colbaton`] 	 = {['name'] = 'weapon_colbaton', 		['label'] = 'Baton', 				['ammotype'] = nil,	            ['damagereason'] = 'Beat'},
 ```
 
-## Drop the next code in ``qb-weapons/config.lua``
+## Drop the next code in `qb-weapons/config.lua`
 
 ```lua
     --Custom Weapons
-    ['weapon_ak47'] 			= 0.15,
-    ['weapon_de'] 	                = 0.15,
-    ['weapon_fnx45'] 			= 0.15,
-    ['weapon_glock17'] 		        = 0.15,
-    ['weapon_m4'] 			= 0.15,
-    ['weapon_hk416'] 			= 0.15,
-    ['weapon_mk14'] 			= 0.15,
-    ['weapon_m110'] 			= 0.15,
-    ['weapon_huntingrifle'] 	        = 0.20,
-    ['weapon_ar15'] 			= 0.15,
-    ['weapon_m9'] 	                = 0.15,
-    ['weapon_m70'] 			= 0.15,
-    ['weapon_m1911'] 		        = 0.15,
-    ['weapon_mac10'] 			= 0.15,
-    ['weapon_uzi'] 	                = 0.15,
-    ['weapon_mp9'] 	                = 0.15,
-    ['weapon_mossberg'] 		= 0.15,
-    ['weapon_remington'] 		= 0.15,
-    ['weapon_scarh'] 			= 0.15,
-    ['weapon_shiv'] 	                = 0.15,
-    ['weapon_katana'] 	                = 0.15,
-    ['weapon_sledgehammer'] 	        = 0.15,
-    ['weapon_mp5'] 			= 0.15,
-    ['weapon_glock18c'] 		= 0.15,
-    ['weapon_glock22'] 			= 0.15,
-    ['weapon_aks74'] 			= 0.15,
-    ['weapon_ak74'] 			= 0.15,
+    ['weapon_ak47'] 			     = 0.15,
+    ['weapon_de'] 	                 = 0.15,
+    ['weapon_fnx45'] 			     = 0.15,
+    ['weapon_glock17'] 		         = 0.15,
+    ['weapon_m4'] 			         = 0.15,
+    ['weapon_hk416'] 			     = 0.15,
+    ['weapon_mk14'] 			     = 0.15,
+    ['weapon_m110'] 			     = 0.15,
+    ['weapon_huntingrifle'] 	     = 0.20,
+    ['weapon_ar15'] 			     = 0.15,
+    ['weapon_m9'] 	                 = 0.15,
+    ['weapon_m70'] 			         = 0.15,
+    ['weapon_m1911'] 		         = 0.15,
+    ['weapon_mac10'] 			     = 0.15,
+    ['weapon_uzi'] 	                 = 0.15,
+    ['weapon_mp9'] 	                 = 0.15,
+    ['weapon_mossberg'] 		     = 0.15,
+    ['weapon_remington'] 		     = 0.15,
+    ['weapon_scarh'] 			     = 0.15,
+    ['weapon_shiv'] 	             = 0.15,
+    ['weapon_katana'] 	             = 0.15,
+    ['weapon_sledgehammer'] 	     = 0.15,
+    ['weapon_mp5'] 			         = 0.15,
+    ['weapon_glock18c'] 		     = 0.15,
+    ['weapon_glock22'] 			     = 0.15,
+    ['weapon_aks74'] 			     = 0.15,
+    ['weapon_ak74'] 			     = 0.15,
+    ['weapon_ak74'] 			     = 0.15,
+    ['WEAPON_PERFORATOR'] 		     = 0.05,
+    ['WEAPON_BLUEBFKNIFE'] 			 = 0.05,
+    ['WEAPON_BFKNIFE'] 				 = 0.05,
+    ['WEAPON_CHBFKNIFE'] 			 = 0.05,
+    ['WEAPON_CRIMSONBFKNIFE'] 		 = 0.05,
+    ['WEAPON_FADEBFKNIFE'] 			 = 0.05,
+    ['WEAPON_FLIPKNIFE'] 			 = 0.05,
+    ['WEAPON_FORESTBFKNIFE'] 		 = 0.05,
+    ['WEAPON_GUTKNIFE'] 			 = 0.05,
+    ['WEAPON_HUNTSMANKNIFE'] 		 = 0.05,
+    ['WEAPON_KARAMBITKNIFE'] 		 = 0.05,
+    ['WEAPON_SAFARIBFKNIFE'] 		 = 0.05,
+    ['WEAPON_SCORCHEDBFKNIFE'] 		 = 0.05,
+    ['WEAPON_SLAUGHTERBFKNIFE'] 	 = 0.05,
+    ['WEAPON_STAINEDRBFKNIFE'] 		 = 0.05,
+    ['WEAPON_URBANRBFKNIFE'] 		 = 0.05,
 ```
-## Drop the next code in ``qb-weapons/config.lua`` (about line 209)
+
+## Drop the next code in `qb-weapons/config.lua` (about line 209)
 
 ```lua
     ['WEAPON_M9'] = {
@@ -286,7 +400,7 @@ This is a **FREE** release!
     },
 ```
 
-## Replace the next code in ``qb-smallresources/client/weapdraw.lua``
+## Replace the next code in `qb-smallresources/client/weapdraw.lua`
 
 ```lua
 local weapons = {
@@ -314,7 +428,6 @@ local weapons = {
 	'WEAPON_KATANA',
 	'WEAPON_SLEDGEHAMMER',
 	'WEAPON_COLBATON',
-	'WEAPON_KARAMBIT',
 	'WEAPON_MP5',
 	'WEAPON_GLOCK18C',
 	'WEAPON_GLOCK22',
@@ -335,7 +448,7 @@ local holsterableWeapons = {
 }
 ```
 
-## Drop the next code in ``qb-smallresources/client/recoil.lua`` ( LINE 107 )
+## Drop the next code in `qb-smallresources/client/recoil.lua` ( LINE 107 )
 
 ```lua
 	-- CUSTOM WEAPONS
@@ -359,7 +472,8 @@ local holsterableWeapons = {
 	[GetHashKey("weapon_remington")] = 0.7,
 	[GetHashKey("weapon_scarh")] = 0.5,
 ```
-## Replace the next code in ``qb-jewelery/config.lua``
+
+## Replace the next code in `qb-jewelery/config.lua`
 
 ```lua
 Config.WhitelistedWeapons = {
@@ -452,7 +566,8 @@ Config.WhitelistedWeapons = {
     },
 }
 ```
-## Replace the next code in ``qb-ambulancejob/config.lua``
+
+## Replace the next code in `qb-ambulancejob/config.lua`
 
 ```lua
     --[[ HIGH CALIBER ]]
@@ -481,8 +596,25 @@ Config.WhitelistedWeapons = {
     --[[ CUTTING ]]
     [`WEAPON_SHIV`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_BAYONETKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_BLUEBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_BFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_CHBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_CRIMSONBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_FADEBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_FLIPKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_FORESTBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_GUTKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_HUNTSMANKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_KARAMBITKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_SAFARIBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_SCORCHEDBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_SLAUGHTERBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_STAINEDRBFKNIFE`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_URBANRBFKNIFE`] = Config.WeaponClasses['CUTTING'],
     --[[ HEAVY IMPACT ]]
     [`WEAPON_SLEDGEHAMMER`] = Config.WeaponClasses['HEAVY_IMPACT'],
+    [`WEAPON_PERFORATOR`] = Config.WeaponClasses['HEAVY_IMPACT'],
 ```
 
 ## Add the next code to your `BackItems.lua` [devyn-backitems](https://github.com/devin-monro/devyn-backitems) script (OPTIONAL)
@@ -619,14 +751,24 @@ Config.WhitelistedWeapons = {
         z_rotation = 180.0,
     },
     ["weapon_katana"] = {
-	model="w_me_katana",
-	back_bone = 24818,
-	x = -0.2,
-	y = -0.15,
-	z = 0.12,
-	x_rotation = 0.0,
-	y_rotation = -120.0,
-	z_rotation = 180.0,
+        model="w_me_katana",
+        back_bone = 24818,
+        x = -0.2,
+        y = -0.15,
+        z = 0.12,
+        x_rotation = 0.0,
+        y_rotation = -120.0,
+        z_rotation = 180.0,
+    },
+    ["weapon_perforator"] = {
+        model="w_me_perforator",
+        back_bone = 24818,
+        x = -0.2,
+        y = -0.15,
+        z = 0.12,
+        x_rotation = 0.0,
+        y_rotation = -120.0,
+        z_rotation = 180.0,
     },
 ```
 
@@ -655,7 +797,7 @@ Config.WhitelistedWeapons = {
     [GetHashKey("weapon_scarh")] = "CLASS 3: Scar-H"
 ```
 
-## (OPTIONAL) Add the weapons to your police armory ``qb-policejob/config.lua``
+## (OPTIONAL) Add the weapons to your police armory `qb-policejob/config.lua`
 
 ```lua
 Config.Items = {
@@ -745,4 +887,3 @@ Config.Items = {
     }
 }
 ```
-
