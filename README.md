@@ -65,6 +65,25 @@ This is a **FREE** release!
 	['weapon_glock22'] 			     = {['name'] = 'weapon_glock22', 			 	['label'] = 'Glock 22', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-22.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'pistol'},
 	['weapon_mp5'] 				 	 = {['name'] = 'weapon_mp5', 			 	  	['label'] = 'H&K MP5', 					['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'MP5.png', 			                    ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A handheld lightweight machine gun'},
 ['weapon_colbaton'] 			 = {['name'] = 'weapon_colbaton', 		 	  	['label'] = 'PD Baton', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_colbaton.png', ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A Pd Baton'},
+
+--knife
+    ['WEAPON_URBANRBFKNIFE'] 		         = {['name'] = 'WEAPON_URBANRBFKNIFE', 	 	  	['label'] = 'Urban Masked Butterfly Knife', 			['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,			['image'] = 'WEAPON_URBANRBFKNIFE.png', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Urban Masked Butterfly Knife'},
+    ['WEAPON_STAINEDRBFKNIFE'] 				 = {['name'] = 'WEAPON_STAINEDRBFKNIFE', 	 		  	['label'] = 'Stained Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_STAINEDRBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Stained Butterfly Knife.'},
+    ['WEAPON_SLAUGHTERBFKNIFE'] 			 = {['name'] = 'WEAPON_SLAUGHTERBFKNIFE', 	 		  	['label'] = 'Slaughter Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SLAUGHTERBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Slaughter Butterfly Knife.'},
+    ['WEAPON_SCORCHEDBFKNIFE'] 				 = {['name'] = 'WEAPON_SCORCHEDBFKNIFE', 	 		  	['label'] = 'Scorched Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SCORCHEDBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Scorched Butterfly Knife.'}, 
+    ['WEAPON_SAFARIBFKNIFE'] 				 = {['name'] = 'WEAPON_SAFARIBFKNIFE', 	 		  	['label'] = 'Safari Mesh Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SAFARIBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Safari Mesh Butterfly Knife.'},
+    ['WEAPON_KARAMBITKNIFE'] 				 = {['name'] = 'WEAPON_KARAMBITKNIFE', 	 		  	['label'] = 'Karamabit Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_KARAMBITKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Karamabit Knife.'},
+    ['WEAPON_HUNTSMANKNIFE'] 				 = {['name'] = 'WEAPON_HUNTSMANKNIFE', 	 		  	['label'] = 'Huntsman Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_HUNTSMANKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Huntsman Knife.'},
+    ['WEAPON_GUTKNIFE'] 				     = {['name'] = 'WEAPON_GUTKNIFE', 	 		  	['label'] = 'Gut Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_GUTKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Gut Knife.'},
+    ['WEAPON_FORESTBFKNIFE'] 				 = {['name'] = 'WEAPON_FORESTBFKNIFE', 	 		  	['label'] = 'Forest Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_FORESTBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Forest Butterfly Knife.'},
+    ['WEAPON_PERFORATOR'] 				     = {['name'] = 'WEAPON_PERFORATOR', 	 		  	['label'] = 'The Perforator',					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'PERFORATOR.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'PERFORATOR.'},
+    ['WEAPON_BLUEBFKNIFE'] 			        = {['name'] = 'WEAPON_BLUEBFKNIFE', 	 		  	['label'] = 'Blue Steel Butterfly Knife', 			['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_BLUEBFKNIFE', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Blue Steel Butterfly Knife',},
+    ['WEAPON_BFKNIFE'] 				        = {['name'] = 'WEAPON_BFKNIFE', 	 		  	    ['label'] = 'Vanilla Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						        ['image'] = 'WEAPON_BFKNIFE', 	 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Vanilla Butterfly Knife',},
+    ['WEAPON_CHBFKNIFE'] 			 = {['name'] = 'WEAPON_CHBFKNIFE', 	 		  	    ['label'] = 'Case Hardened Butterfly Knife', 		['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_CHBFKNIFE', 	 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Case Hardened Butterfly Knife',},
+    ['WEAPON_CRIMSONBFKNIFE'] 		 = {['name'] = 'WEAPON_CRIMSONBFKNIFE', 	 		['label'] = 'Crimson Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_CRIMSONBFKNIFE', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Crimson Butterfly Knife',},
+    ['WEAPON_FADEBFKNIFE'] 			 = {['name'] = 'WEAPON_FADEBFKNIFE', 	 		  	['label'] = 'Fade Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						    ['image'] = 'WEAPON_FADEBFKNIFE', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Fade Butterfly Knife',},
+    ['WEAPON_FLIPKNIFE'] 			 = {['name'] = 'WEAPON_FLIPKNIFE', 	 		        ['label'] = 'Flip Knife', 					        ['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						                    ['image'] = 'WEAPON_FLIPKNIFE', 	 ['unique'] = true, 		['useable'] = false,["created"] = nil,	    ['description'] = 'Flip Knife',},
+
 ```
 
 ## (knives) If using OX then place in `ox_inventory/data/weapons.lua`
@@ -189,7 +208,27 @@ This is a **FREE** release!
 	[`weapon_glock18c`] 	 = {['name'] = 'weapon_glock18c', 		['label'] = 'Glock 18C', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_mp5`] 			 = {['name'] = 'weapon_mp5', 		    ['label'] = 'H&K MP5', 				['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_colbaton`] 	 = {['name'] = 'weapon_colbaton', 		['label'] = 'Baton', 				['ammotype'] = nil,	            ['damagereason'] = 'Beat'},
+
+---knifes
+	[`WEAPON_URBANRBFKNIFE`] 		         = {['name'] = 'WEAPON_URBANRBFKNIFE', 	 	  	['label'] = 'Urban Masked Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_STAINEDRBFKNIFE`] 				 = {['name'] = 'WEAPON_STAINEDRBFKNIFE', 	 		  	['label'] = 'Stained Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SLAUGHTERBFKNIFE`] 			 = {['name'] = 'WEAPON_SLAUGHTERBFKNIFE', 	 		  	['label'] = 'Slaughter Butterfly Knife', 				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SCORCHEDBFKNIFE`] 				 = {['name'] = 'WEAPON_SCORCHEDBFKNIFE', 	 		  	['label'] = 'Scorched Butterfly Knife', 				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SAFARIBFKNIFE`] 				 = {['name'] = 'WEAPON_SAFARIBFKNIFE', 	 		  	['label'] = 'Safari Mesh Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_KARAMBITKNIFE`] 				 = {['name'] = 'WEAPON_KARAMBITKNIFE', 	 		  	['label'] = 'Karamabit Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_HUNTSMANKNIFE`] 				 = {['name'] = 'WEAPON_HUNTSMANKNIFE', 	 		  	['label'] = 'Huntsman Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_GUTKNIFE`] 				     = {['name'] = 'WEAPON_GUTKNIFE', 	 		  	['label'] = 'Gut Knife', 										['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FORESTBFKNIFE`] 				 = {['name'] = 'WEAPON_FORESTBFKNIFE', 	 		  	['label'] = 'Forest Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_PERFORATOR`] 				     = {['name'] = 'WEAPON_PERFORATOR', 	 		  	['label'] = 'The Perforator',								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_BLUEBFKNIFE`] 			        = {['name'] = 'WEAPON_BLUEBFKNIFE', 	 		  	['label'] = 'Blue Steel Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_BFKNIFE`] 				        = {['name'] = 'WEAPON_BFKNIFE', 	 		  	    ['label'] = 'Vanilla Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_CHBFKNIFE`] 			 = {['name'] = 'WEAPON_CHBFKNIFE', 	 		  	    ['label'] = 'Case Hardened Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_CRIMSONBFKNIFE`] 		 = {['name'] = 'WEAPON_CRIMSONBFKNIFE', 	 		['label'] = 'Crimson Butterfly Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FADEBFKNIFE`] 			 = {['name'] = 'WEAPON_FADEBFKNIFE', 	 		  	['label'] = 'Fade Butterfly Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FLIPKNIFE`] 			 = {['name'] = 'WEAPON_FLIPKNIFE', 	 		        ['label'] = 'Flip Knife', 					        				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+
 ```
+
 
 ## Drop the next code in `qb-weapons/config.lua`
 
