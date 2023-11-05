@@ -1,7 +1,4 @@
 # PLEASE DO NOT DM OR ASK FOR SUPPORT IN OUR DISCORDS
-
-# SINCE 2023 ROCKSTAR DOESNT ALLOW REAL LIFE BRANDS, USE THIS PACK ON YOUR OWN RISK
-
 ### Feel free to ask in the support channel of Project Sloth (https://discord.gg/projectsloth)
 
 # Addon guns for QBCore
@@ -36,6 +33,58 @@ This is a **FREE** release!
 
 - Put the `custom_weapons` into your `resources` folder.
 
+## If using OX then place in `ox_inventory/data/weapons.lua`
+
+```lua
+-- Custom Weapons
+    ['WEAPON_AK47'] 		 	= { label = 'AK-47', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',},  
+    ['WEAPON_DE'] 					= { label = 'Desert Eagle',	    weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},     
+    ['WEAPON_FNX45'] 			= { label = 'FN FNX-45', 	    weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},     
+    ['WEAPON_GLOCK17'] 		= { label = ' Glock 17',      weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},     
+    ['WEAPON_M4'] 				= { label = ' M4A1', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',},  
+    ['WEAPON_M9'] 			= { label = 'Beretta M9A3',     weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},     
+    ['WEAPON_M70'] 				= { label = 'M70', 			    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',},  
+    ['WEAPON_M1911'] 			= { label = 'M1911', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},     
+    ['WEAPON_UZI'] 					= { label = 'UZI', 			    weight = 1000,	durability = 0.0,	ammoname = 'ammo-9',},      
+    ['WEAPON_MAC10'] 				= { label = 'MAC-10', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-9',},      
+    ['WEAPON_MOSSBERG'] 	= { label = 'Mossberg 500',     weight = 1000,	durability = 0.0,	ammoname = 'ammo-shotgun',},
+    ['WEAPON_REMINGTON'] 			= { label = 'Remington 870',    weight = 1000,	durability = 0.0,	ammoname = 'ammo-shotgun',},
+    ['WEAPON_SCARH'] 		= { label = 'PD SCAR-H', 	    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',},  
+    ['WEAPON_SHIV'] 				= { label = 'Shiv', 		    weight = 1000,	durability = 0.0,	},                          
+    ['WEAPON_AR15'] 			= { label = 'PD AR-15', 	    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',},  
+    ['WEAPON_MK14'] 			= { label = 'PD MK14', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-sniper',}, 
+    ['WEAPON_HUNTINGRIFLE'] 		 = { label = 'Hunting Rifle',    weight = 1000,	durability = 0.0,	ammoname = 'ammo-sniper',}, 
+    ['WEAPON_KATANA'] 			= { label = 'Katana', 		    weight = 1000,	durability = 0.0,	},      		
+    ['WEAPON_SLEDGEHAMMER'] 	   = { label = 'Sledge Hammer',    weight = 1000,	durability = 0.0,	},      		
+    ['WEAPON_MP9'] 			          	= { label = 'MP9', 				weight = 1000,	durability = 0.0,	ammoname = 'ammo-9',},     
+    ['WEAPON_M110'] 		           	 = { label = 'M110', 			weight = 1000,	durability = 0.0,	ammoname = 'ammo-sniper',},
+    ['WEAPON_HK416'] 		           	 = { label = 'HK-416', 			weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',}, 
+    ['WEAPON_AK74'] 		 	= { label = 'AK-74', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',}, 
+    ['WEAPON_AKS74'] 		 	= { label = 'AK-S74', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-rifle',}, 
+    ['WEAPON_GLOCK18C'] 	= { label = 'Glock 18C', 	    weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},    
+    ['WEAPON_GLOCK22'] 			  = { label = 'Glock 22',         weight = 1000,	durability = 0.0,	ammoname = 'ammo-45',},    
+    ['WEAPON_MP5'] 				 	= { label = 'H&K MP5', 		    weight = 1000,	durability = 0.0,	ammoname = 'ammo-9',},     
+    ['WEAPON_COLBATON'] 			= { label = 'PD Baton',         weight = 1000,	durability = 0.0},
+
+    --CUSTOM knifes
+    ['WEAPON_PERFORATOR']            = {label = 'The Perforator',    weight = 500,   durability = 0.1,},
+    ['WEAPON_BAYONETKNIFE']          = {label = 'Bayonet Knife',     weight = 300,durability = 0.1,},
+    ['WEAPON_BLUEBFKNIFE']           = {label = 'Blue Steel Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_BFKNIFE']               = {label = 'Vanilla Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_CHBFKNIFE']             = {label = 'Case Hardened Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_CRIMSONBFKNIFE']        = {label = 'Crimson Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_FADEBFKNIFE']           = {label = 'Fade Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_FLIPKNIFE']             = {label = 'Flip Knife',        weight = 300,durability = 0.1,},
+    ['WEAPON_FORESTBFKNIFE']         = {label = 'Forest Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_GUTKNIFE']              = {label = 'Gut Knife',         weight = 300,durability = 0.1,},
+    ['WEAPON_HUNTSMANKNIFE']         = {label = 'Huntsman Knife',    weight = 300,durability = 0.1,},
+    ['WEAPON_KARAMBITKNIFE']         = {label = 'Karamabit Knife',   weight = 300,durability = 0.1,},
+    ['WEAPON_SAFARIBFKNIFE']         = {label = 'Safari Mesh Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_SCORCHEDBFKNIFE']       = {label = 'Scorched Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_SLAUGHTERBFKNIFE']      = {label = 'Slaughter Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_STAINEDRBFKNIFE']       = {label = 'Stained Butterfly Knife',weight = 300,durability = 0.1,},
+    ['WEAPON_URBANRBFKNIFE']         = {label = 'Urban Masked Butterfly Knife',weight = 300,durability = 0.1,},
+
 ## Drop first code in `qb-core/shared/items.lua`
 
 ```lua
@@ -54,112 +103,42 @@ This is a **FREE** release!
 	['weapon_remington'] 			 = {['name'] = 'weapon_remington', 		 	  	['label'] = 'Remington 870', 			['weight'] = 8000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',			['image'] = 'remington.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A pump-action smoothbore gun for firing small shot at short range'},
 	['weapon_scarh'] 				 = {['name'] = 'weapon_scarh', 				 	['label'] = 'PD SCAR-H', 				['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'scar.png',								['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'An extremely versatile assault rifle for any combat situation'},
 	['weapon_shiv'] 				 = {['name'] = 'weapon_shiv', 			 	  	['label'] = 'Shiv', 					['weight'] = 3000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'shiv.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'An instrument composed of a blade fixed into a handle, used for cutting or as a weapon'},
-	['weapon_ar15'] 				 = {['name'] = 'weapon_ar15', 	 	 		 	['label'] = 'PD AR-15', 				['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_mcx.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A lightweight automatic rifle for the Police'},
+	['weapon_ar15'] 				 = {['name'] = 'weapon_ar15', 	 	 		 	['label'] = 'PD AR-15', 				['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'WEAPON_AR15.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A lightweight automatic rifle for the Police'},
 	['weapon_mk14'] 				 = {['name'] = 'weapon_mk14', 	 			  	['label'] = 'PD MK14', 					['weight'] = 23000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'mk14.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A very accurate single-fire rifle'},
 	['weapon_huntingrifle'] 		 = {['name'] = 'weapon_huntingrifle', 	 	  	['label'] = 'Hunting Rifle', 			['weight'] = 23000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'huntingrifle.png', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A very accurate Rifle for hunting'},
 	['weapon_katana'] 				 = {['name'] = 'weapon_katana', 	 		  	['label'] = 'Katana', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'katana.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A single-edged sword that is the longer of a pair worn by the Japanese samurai.'},
 	['weapon_sledgehammer'] 				 = {['name'] = 'weapon_sledgehammer', 	 		  	['label'] = 'Sledge Hammer', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'sledgehammer.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A Sledge Hammer to destroy peoples heads'},
-	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = '???', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
-	['weapon_m110'] 		 = {['name'] = 'weapon_m110', 	 	  	['label'] = 'M110', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = '???', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
-	['weapon_hk416'] 		 = {['name'] = 'weapon_hk416', 	 	  	['label'] = 'HK-416', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_carbinerifle.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle'},
+	['weapon_mp9'] 			 = {['name'] = 'weapon_mp9', 		 	  	['label'] = 'MP9', 				['weight'] = 10000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'weapon_mp9.png', 		['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A handheld lightweight machine gun'},
+	['weapon_m110'] 		 = {['name'] = 'weapon_m110', 	 	  	['label'] = 'M110', 			['weight'] = 23000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'WEAPON_M110.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A very accurate single-fire rifle'},
+	['weapon_hk416'] 		 = {['name'] = 'weapon_hk416', 	 	  	['label'] = 'HK-416', 			['weight'] = 13000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'WEAPON_HK416.png', 	['unique'] = true, 		['useable'] = false,["created"] = nil,["decay"] = 30.0,     	['description'] = 'A lightweight automatic rifle'},
 	['weapon_ak74'] 		 		 = {['name'] = 'weapon_ak74', 	 			  	['label'] = 'AK-74', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_ak74.png', 				        ['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
 	['weapon_aks74'] 		 		 = {['name'] = 'weapon_aks74', 	 			  	['label'] = 'AK-S74', 					['weight'] = 13000, 	['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_aks74.png', 				    ['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
 	['weapon_glock18c'] 			 = {['name'] = 'weapon_glock18c', 			 	['label'] = 'Glock 18C', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-18c.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'semi automatic pistol'},
 	['weapon_glock22'] 			     = {['name'] = 'weapon_glock22', 			 	['label'] = 'Glock 22', 				['weight'] = 7000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'glock-22.png', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'pistol'},
 	['weapon_mp5'] 				 	 = {['name'] = 'weapon_mp5', 			 	  	['label'] = 'H&K MP5', 					['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SMG',				['image'] = 'MP5.png', 			                    ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A handheld lightweight machine gun'},
 ['weapon_colbaton'] 			 = {['name'] = 'weapon_colbaton', 		 	  	['label'] = 'PD Baton', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_colbaton.png', ['unique'] = true, 		['useable'] = false,["created"] = nil, 	['description'] = 'A Pd Baton'},
+    --knife
+    ['WEAPON_URBANRBFKNIFE'] 		         = {['name'] = 'WEAPON_URBANRBFKNIFE', 	 	  	['label'] = 'Urban Masked Butterfly Knife', 			['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,			['image'] = 'WEAPON_URBANRBFKNIFE.png', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Urban Masked Butterfly Knife'},
+    ['WEAPON_STAINEDRBFKNIFE'] 				 = {['name'] = 'WEAPON_STAINEDRBFKNIFE', 	 		  	['label'] = 'Stained Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_STAINEDRBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Stained Butterfly Knife.'},
+    ['WEAPON_SLAUGHTERBFKNIFE'] 			 = {['name'] = 'WEAPON_SLAUGHTERBFKNIFE', 	 		  	['label'] = 'Slaughter Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SLAUGHTERBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Slaughter Butterfly Knife.'},
+    ['WEAPON_SCORCHEDBFKNIFE'] 				 = {['name'] = 'WEAPON_SCORCHEDBFKNIFE', 	 		  	['label'] = 'Scorched Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SCORCHEDBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Scorched Butterfly Knife.'}, 
+    ['WEAPON_SAFARIBFKNIFE'] 				 = {['name'] = 'WEAPON_SAFARIBFKNIFE', 	 		  	['label'] = 'Safari Mesh Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SAFARIBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Safari Mesh Butterfly Knife.'},
+    ['WEAPON_KARAMBITKNIFE'] 				 = {['name'] = 'WEAPON_KARAMBITKNIFE', 	 		  	['label'] = 'Karamabit Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_KARAMBITKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Karamabit Knife.'},
+    ['WEAPON_HUNTSMANKNIFE'] 				 = {['name'] = 'WEAPON_HUNTSMANKNIFE', 	 		  	['label'] = 'Huntsman Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_HUNTSMANKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Huntsman Knife.'},
+    ['WEAPON_GUTKNIFE'] 				     = {['name'] = 'WEAPON_GUTKNIFE', 	 		  	['label'] = 'Gut Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_GUTKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Gut Knife.'},
+    ['WEAPON_FORESTBFKNIFE'] 				 = {['name'] = 'WEAPON_FORESTBFKNIFE', 	 		  	['label'] = 'Forest Butterfly Knife', 					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_FORESTBFKNIFE.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Forest Butterfly Knife.'},
+    ['WEAPON_PERFORATOR'] 				     = {['name'] = 'WEAPON_PERFORATOR', 	 		  	['label'] = 'The Perforator',					['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'PERFORATOR.png', 							['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'PERFORATOR.'},
+    ['WEAPON_BLUEBFKNIFE'] 			        = {['name'] = 'WEAPON_BLUEBFKNIFE', 	 		  	['label'] = 'Blue Steel Butterfly Knife', 			['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_BLUEBFKNIFE', 						['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Blue Steel Butterfly Knife',},
+    ['WEAPON_BFKNIFE'] 				        = {['name'] = 'WEAPON_BFKNIFE', 	 		  	    ['label'] = 'Vanilla Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						        ['image'] = 'WEAPON_BFKNIFE', 	 						['unique'] = true, 		['useable'] = false,["created"] = nil,	['description'] = 'Vanilla Butterfly Knife',},
+    ['WEAPON_CHBFKNIFE'] 			 = {['name'] = 'WEAPON_CHBFKNIFE', 	 		  	    ['label'] = 'Case Hardened Butterfly Knife', 		['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_CHBFKNIFE', 	 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Case Hardened Butterfly Knife',},
+    ['WEAPON_CRIMSONBFKNIFE'] 		 = {['name'] = 'WEAPON_CRIMSONBFKNIFE', 	 		['label'] = 'Crimson Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_CRIMSONBFKNIFE', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Crimson Butterfly Knife',},
+    ['WEAPON_FADEBFKNIFE'] 			 = {['name'] = 'WEAPON_FADEBFKNIFE', 	 		  	['label'] = 'Fade Butterfly Knife', 				['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						    ['image'] = 'WEAPON_FADEBFKNIFE', 					['unique'] = true, 		['useable'] = false,["created"] = nil,	        ['description'] = 'Fade Butterfly Knife',},
+    ['WEAPON_FLIPKNIFE'] 			 = {['name'] = 'WEAPON_FLIPKNIFE', 	 		        ['label'] = 'Flip Knife', 					        ['weight'] = 1000, 	['type'] = 'weapon', 	['ammotype'] = nil,						                    ['image'] = 'WEAPON_FLIPKNIFE', 	 ['unique'] = true, 		['useable'] = false,["created"] = nil,	    ['description'] = 'Flip Knife',},
+
+
 ```
 
-## (knives) If using OX then place in `ox_inventory/data/weapons.lua`
 
-```lua
-        --CUSTOM WEAPONS
-		['WEAPON_PERFORATOR'] = {
-			label = 'The Perforator',
-			weight = 500,
-			durability = 0.1,
-		},
-		['WEAPON_BAYONETKNIFE'] = {
-			label = 'Bayonet Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_BLUEBFKNIFE'] = {
-			label = 'Blue Steel Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_BFKNIFE'] = {
-			label = 'Vanilla Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_CHBFKNIFE'] = {
-			label = 'Case Hardened Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_CRIMSONBFKNIFE'] = {
-			label = 'Crimson Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_FADEBFKNIFE'] = {
-			label = 'Fade Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_FLIPKNIFE'] = {
-			label = 'Flip Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_FORESTBFKNIFE'] = {
-			label = 'Forest Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_GUTKNIFE'] = {
-			label = 'Gut Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_HUNTSMANKNIFE'] = {
-			label = 'Huntsman Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_KARAMBITKNIFE'] = {
-			label = 'Karamabit Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_SAFARIBFKNIFE'] = {
-			label = 'Safari Mesh Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_SCORCHEDBFKNIFE'] = {
-			label = 'Scorched Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_SLAUGHTERBFKNIFE'] = {
-			label = 'Slaughter Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_STAINEDRBFKNIFE'] = {
-			label = 'Stained Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-		['WEAPON_URBANRBFKNIFE'] = {
-			label = 'Urban Masked Butterfly Knife',
-			weight = 300,
-			durability = 0.1,
-		},
-```
 
 ## Drop the next code in `qb-core/shared/weapons.lua`
 
@@ -192,6 +171,25 @@ This is a **FREE** release!
 	[`weapon_glock18c`] 	 = {['name'] = 'weapon_glock18c', 		['label'] = 'Glock 18C', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_mp5`] 			 = {['name'] = 'weapon_mp5', 		    ['label'] = 'H&K MP5', 				['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_colbaton`] 	 = {['name'] = 'weapon_colbaton', 		['label'] = 'Baton', 				['ammotype'] = nil,	            ['damagereason'] = 'Beat'},
+    ---knifes
+	[`WEAPON_URBANRBFKNIFE`] 		         = {['name'] = 'WEAPON_URBANRBFKNIFE', 	 	  	['label'] = 'Urban Masked Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_STAINEDRBFKNIFE`] 				 = {['name'] = 'WEAPON_STAINEDRBFKNIFE', 	 		  	['label'] = 'Stained Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SLAUGHTERBFKNIFE`] 			 = {['name'] = 'WEAPON_SLAUGHTERBFKNIFE', 	 		  	['label'] = 'Slaughter Butterfly Knife', 				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SCORCHEDBFKNIFE`] 				 = {['name'] = 'WEAPON_SCORCHEDBFKNIFE', 	 		  	['label'] = 'Scorched Butterfly Knife', 				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_SAFARIBFKNIFE`] 				 = {['name'] = 'WEAPON_SAFARIBFKNIFE', 	 		  	['label'] = 'Safari Mesh Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_KARAMBITKNIFE`] 				 = {['name'] = 'WEAPON_KARAMBITKNIFE', 	 		  	['label'] = 'Karamabit Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_HUNTSMANKNIFE`] 				 = {['name'] = 'WEAPON_HUNTSMANKNIFE', 	 		  	['label'] = 'Huntsman Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_GUTKNIFE`] 				     = {['name'] = 'WEAPON_GUTKNIFE', 	 		  	['label'] = 'Gut Knife', 										['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FORESTBFKNIFE`] 				 = {['name'] = 'WEAPON_FORESTBFKNIFE', 	 		  	['label'] = 'Forest Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_PERFORATOR`] 				     = {['name'] = 'WEAPON_PERFORATOR', 	 		  	['label'] = 'The Perforator',								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_BLUEBFKNIFE`] 			        = {['name'] = 'WEAPON_BLUEBFKNIFE', 	 		  	['label'] = 'Blue Steel Butterfly Knife', 					['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_BFKNIFE`] 				        = {['name'] = 'WEAPON_BFKNIFE', 	 		  	    ['label'] = 'Vanilla Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_CHBFKNIFE`] 			 = {['name'] = 'WEAPON_CHBFKNIFE', 	 		  	    ['label'] = 'Case Hardened Butterfly Knife', 						['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_CRIMSONBFKNIFE`] 		 = {['name'] = 'WEAPON_CRIMSONBFKNIFE', 	 		['label'] = 'Crimson Butterfly Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FADEBFKNIFE`] 			 = {['name'] = 'WEAPON_FADEBFKNIFE', 	 		  	['label'] = 'Fade Butterfly Knife', 								['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+	[`WEAPON_FLIPKNIFE`] 			 = {['name'] = 'WEAPON_FLIPKNIFE', 	 		        ['label'] = 'Flip Knife', 					        				['ammotype'] = nil,				['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
+
+
 ```
 
 ## Drop the next code in `qb-weapons/config.lua`
