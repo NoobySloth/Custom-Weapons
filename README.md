@@ -2,8 +2,6 @@
 
 # SINCE 2023 ROCKSTAR DOESNT ALLOW REAL LIFE BRANDS, USE THIS PACK ON YOUR OWN RISK
 
-### Feel free to ask in the support channel of Project Sloth (https://discord.gg/projectsloth)
-
 # Addon guns for QBCore
 
 This is a **FREE** release!
